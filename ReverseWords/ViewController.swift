@@ -21,10 +21,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapButton(_ sender: Any) {
+        let text: String = enterText.text!
+        textView.text = String(text.reversed())
         
     }
-    
-
-
 }
 
