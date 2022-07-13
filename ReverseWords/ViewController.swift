@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tapButton.layer.cornerRadius = 15
+        tapButton.layer.cornerRadius = 20
     }
     
     @IBAction func tapButton(_ sender: Any) {
