@@ -13,11 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var enterText: UITextField!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var tapButton: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tapButton.layer.cornerRadius = 15
     }
     
     @IBAction func tapButton(_ sender: Any) {
@@ -25,5 +27,6 @@ class ViewController: UIViewController {
         textView.text = String(text.reversed())
         
     }
+    
 }
 

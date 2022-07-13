@@ -36,13 +36,13 @@ type text below</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text to reverse" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1O-1v-GWn">
-                                <rect key="frame" x="31" y="338" width="353" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text to reverse" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1O-1v-GWn">
+                                <rect key="frame" x="20" y="338" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IUN-A8-Cvz">
-                                <rect key="frame" x="31" y="422" width="353" height="207"/>
+                                <rect key="frame" x="20" y="422" width="364" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,18 +65,18 @@ type text below</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MKG-Ec-O61" secondAttribute="bottom" constant="20" id="1cC-Vf-OhZ"/>
-                            <constraint firstItem="MKG-Ec-O61" firstAttribute="top" secondItem="IUN-A8-Cvz" secondAttribute="bottom" constant="176" id="B81-As-fiX"/>
+                            <constraint firstItem="MKG-Ec-O61" firstAttribute="top" secondItem="IUN-A8-Cvz" secondAttribute="bottom" constant="349" id="B81-As-fiX"/>
                             <constraint firstItem="NA8-Tt-pv3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="BcE-O0-N4Z"/>
                             <constraint firstItem="MKG-Ec-O61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="DnR-e7-yrP"/>
-                            <constraint firstItem="IUN-A8-Cvz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="MYZ-ep-vdU"/>
+                            <constraint firstItem="IUN-A8-Cvz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MYZ-ep-vdU"/>
                             <constraint firstItem="MKk-pn-gkG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="PAg-hQ-iOi"/>
                             <constraint firstItem="IUN-A8-Cvz" firstAttribute="top" secondItem="U1O-1v-GWn" secondAttribute="bottom" constant="50" id="PBg-oH-ec3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKG-Ec-O61" secondAttribute="trailing" constant="30" id="QxG-s3-VUY"/>
                             <constraint firstItem="NA8-Tt-pv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="TqH-Wy-UOI"/>
                             <constraint firstItem="plL-Ke-6J4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="WaR-2F-Cn2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKk-pn-gkG" secondAttribute="trailing" constant="80" id="YjM-rH-zev"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1O-1v-GWn" secondAttribute="trailing" constant="30" id="a9R-9K-3hl"/>
-                            <constraint firstItem="U1O-1v-GWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="cBR-xD-6fr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1O-1v-GWn" secondAttribute="trailing" constant="20" id="a9R-9K-3hl"/>
+                            <constraint firstItem="U1O-1v-GWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cBR-xD-6fr"/>
                             <constraint firstItem="MKk-pn-gkG" firstAttribute="top" secondItem="NA8-Tt-pv3" secondAttribute="bottom" constant="76" id="pvK-jw-7xV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NA8-Tt-pv3" secondAttribute="trailing" constant="129" id="tAR-aG-IHk"/>
                             <constraint firstItem="plL-Ke-6J4" firstAttribute="top" secondItem="MKk-pn-gkG" secondAttribute="bottom" constant="8" symbolic="YES" id="vgd-iJ-6PW"/>
@@ -89,13 +89,14 @@ type text below</string>
                         <outlet property="enterText" destination="U1O-1v-GWn" id="lDF-Ch-W2m"/>
                         <outlet property="highLbl" destination="NA8-Tt-pv3" id="ToV-DE-4Js"/>
                         <outlet property="infoLbl" destination="plL-Ke-6J4" id="jwd-F0-mY1"/>
+                        <outlet property="tapButton" destination="MKG-Ec-O61" id="uRP-UW-cHb"/>
                         <outlet property="textView" destination="IUN-A8-Cvz" id="20d-bu-i82"/>
                         <outlet property="topLbl" destination="MKk-pn-gkG" id="Z5b-Fn-8pr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="-88"/>
+            <point key="canvasLocation" x="-6394.202898550725" y="-1511.3839285714284"/>
         </scene>
     </scenes>
     <resources>
