@@ -19,14 +19,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tapButton.layer.cornerRadius = 20
-    }
-    
-    @IBAction func tapButton(_ sender: Any) {
-        let text: String = enterText.text!
-        textView.text = String(text.reversed())
+        tapButton.layer.cornerRadius = 15
         
     }
     
-}
+    @IBAction func tapButton(_ sender: UIButton) {
+        if enterText.text != "" && textView.text == nil {
+                textView.text = reverseStringBrain.reverseString(input: textView.text)
+                tapButton.setTitle(ReverseStringBrain.Constants.clear, for: .normal)
+            } else if enterText.text != "" {
+                enterText.text = ""
+                textView.text = nil
+                tapButton.setTitle(ReverseStringBrain.Constants.reverse, for: .normal)
+                tapButton.alpha = 0.5
+            }
+        }
+            
+        }
+//        let text: String = enterText.text!
+//            textView.text = String(text.reversed())
+//            tapButton.setTitle("Reverse", for: .normal)
+//            tapButton.setTitle("Clear", fo
 

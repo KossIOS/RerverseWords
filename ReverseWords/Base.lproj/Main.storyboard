@@ -53,11 +53,11 @@ type text below</string>
                                 <color key="backgroundColor" red="0.39676827190000002" green="0.73550128940000004" blue="0.99111753700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reverse">
+                                <buttonConfiguration key="configuration" style="plain" title="Title">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqj-fa-UQO"/>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fP1-fZ-7Fe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,7 +96,7 @@ type text below</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6394.202898550725" y="-1511.3839285714284"/>
+            <point key="canvasLocation" x="-6464" y="-1457"/>
         </scene>
     </scenes>
     <resources>
