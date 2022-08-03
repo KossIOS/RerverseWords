@@ -24,15 +24,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapButton(_ sender: UIButton) {
-        let text: String = enterText.text!
-        if enterText.text != "" && textView.text != "" {
-            tapButton.setTitle("Reverse", for: .normal)
-            enterText.text?.removeAll()
-            textView.text.removeAll()
-        }else if enterText.text != "" {
+        if let text: String = enterText.text, enterText.text != "" && textView.text == "" {
+            tapButton.setTitle("Сlear", for: .normal)
             textView.text = String(text.reversed())
-            tapButton.setTitle("Clear", for: .normal)
+        } else if enterText.text  !=  "" && textView.text != "" {
+            tapButton.setTitle("Reverse", for: .normal)
+            clearDataView()
         }
-     }
+    }
     
+    private func clearDataView() {
+        self.enterText.text = nil
+        self.textView.text = nil
+    }
 }
