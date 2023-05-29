@@ -21,20 +21,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tapButton.layer.cornerRadius = 15
         
+        
     }
     
     @IBAction func tapButton(_ sender: UIButton) {
-        if let text: String = enterText.text, enterText.text != "" && textView.text == "" {
-            tapButton.setTitle("Сlear", for: .normal)
+        let text: String = enterText.text!
+        if enterText.text != ""  {
             textView.text = String(text.reversed())
-        } else if enterText.text  !=  "" && textView.text != "" {
+            tapButton.setTitle("Clear", for: .normal)
+        } else if enterText.text != "" && textView.text != "" {
             tapButton.setTitle("Reverse", for: .normal)
-            clearDataView()
+            enterText.text?.removeAll()
+            textView.text.removeAll()
         }
-    }
-    
-    private func clearDataView() {
-        self.enterText.text = nil
-        self.textView.text = nil
     }
 }
