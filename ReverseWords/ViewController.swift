@@ -33,12 +33,8 @@ class ViewController: UIViewController {
             tapButton.setTitle("Reverse", for: .normal)
             enterText.text?.removeAll()
             textView.text.removeAll()
-            
-            
         }
     }
-    
-    
 }
 
 
